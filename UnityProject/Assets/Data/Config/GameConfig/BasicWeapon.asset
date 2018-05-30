@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66c485c59bb497a90fc9ef892c567df, type: 3}
+  m_Name: BasicWeapon
+  m_EditorClassIdentifier: 
+  Description: 
+  FlagsOnEnable: 0
+  m_value:
+    WeaponParams: {fileID: 11400000, guid: 9dd340b835b7d694dae5e77b55f45dd7, type: 2}
+    BulletData: {fileID: 11400000, guid: b8058c1e4b033a045ba50edf31a1c4c0, type: 2}
