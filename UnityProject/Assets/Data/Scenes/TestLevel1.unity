@@ -152,10 +152,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1808180451921668, guid: d9c78b884ea930f49a9f5529926c64bc, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 114692988292731178, guid: d9c78b884ea930f49a9f5529926c64bc,
+        type: 2}
+      propertyPath: GroundLayermask
+      value: 
+      objectReference: {fileID: 11400000, guid: d39dfe34964bdf348be98723065b30e4,
+        type: 2}
+    - target: {fileID: 114790234810353720, guid: d9c78b884ea930f49a9f5529926c64bc,
+        type: 2}
+      propertyPath: EnemyLayermask
+      value: 
+      objectReference: {fileID: 11400000, guid: b76238d6a67d78f43a2bdf10d08c1d72,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9c78b884ea930f49a9f5529926c64bc, type: 2}
   m_IsPrefabParent: 0

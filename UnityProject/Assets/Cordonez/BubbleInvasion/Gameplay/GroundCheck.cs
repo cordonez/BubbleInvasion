@@ -7,11 +7,12 @@ namespace Cordonez.BubbleInvasion.Gameplay
 	[RequireComponent(typeof(BoxCollider2D))]
 	public class GroundCheck : MonoBehaviour
 	{
+		public SO_Layermask GroundLayermask;
 		public SO_bool PlayerIsGrounded;
 
 		private void OnTriggerEnter2D(Collider2D _other)
 		{
-			if (_other.GetComponent<IGround>() != null)
+			if (GroundLayermask.ContainsLayer(_other.gameObject.layer))
 			{
 				PlayerIsGrounded.Value = true;
 			}
@@ -19,7 +20,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 
 		private void OnTriggerExit2D(Collider2D _other)
 		{
-			if (_other.GetComponent<IGround>() != null)
+			if (GroundLayermask.ContainsLayer(_other.gameObject.layer))
 			{
 				PlayerIsGrounded.Value = false;
 			}
