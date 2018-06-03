@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dae4d9487ce462696bc201016735e8e, type: 3}
-  m_Name: EnemyMedium
+  m_Name: EnemyMediumDoubleSplit
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
@@ -21,5 +21,5 @@ MonoBehaviour:
     JumpForce: 11
     GravityScale: 1
     OnDestroyEnemies:
-    - {fileID: 11400000, guid: 24719021e69461c40bc2b87eeef27185, type: 2}
+    - {fileID: 11400000, guid: 1b013c31d190ebc4bbc27b4fc2dff34c, type: 2}
     OnDestroyPrefabs: []

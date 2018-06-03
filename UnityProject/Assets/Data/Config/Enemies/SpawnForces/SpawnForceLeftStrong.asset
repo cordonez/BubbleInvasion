@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b06ed7ca8b2a4a5bb0c02f4ce8768194, type: 3}
-  m_Name: SpeedMedium
+  m_Name: SpawnForceLeftStrong
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
-  m_value: {x: 4, y: 11}
+  m_value: {x: -300, y: 200}

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50119983017376676}
   - component: {fileID: 58590704402418588}
   - component: {fileID: 114943404260639016}
+  - component: {fileID: 114381498305396990}
   m_Layer: 11
   m_Name: EnemyBasicCircle
   m_TagString: Untagged
@@ -78,6 +79,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &114381498305396990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727955336101672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcfde9f5bc808fb4791258fabf677d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HpColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.7205882, g: 0.7205882, b: 0.7205882, a: 1}
 --- !u!114 &114943404260639016
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -9,17 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dae4d9487ce462696bc201016735e8e, type: 3}
-  m_Name: EnemyMedium
+  m_Name: EnemyLargeDoubleSplit
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
   m_value:
     Prefab: {fileID: 1727955336101672, guid: 2891433ce6b0833439fddb26632c5031, type: 2}
     Hp: 1
-    Size: 4
+    Size: 8
     HorizontalVelocity: 4
-    JumpForce: 11
+    JumpForce: 12
     GravityScale: 1
     OnDestroyEnemies:
-    - {fileID: 11400000, guid: 24719021e69461c40bc2b87eeef27185, type: 2}
+    - {fileID: 11400000, guid: 7e4bcb62ed4955c4a873608cfb5f1463, type: 2}
     OnDestroyPrefabs: []

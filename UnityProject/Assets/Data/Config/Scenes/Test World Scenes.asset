@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ff74779cde4e3a81b5ba79442918ae, type: 3}
+  m_Name: Test World Scenes
+  m_EditorClassIdentifier: 
+  Description: 
+  FlagsOnEnable: 0
+  m_value:
+  - {fileID: 11400000, guid: 30b7da0b352aded4195cfcfbb2684cf9, type: 2}
+  - {fileID: 11400000, guid: deb200a3b2fdeeb43b065200434cbddb, type: 2}
+  - {fileID: 11400000, guid: 2dbb48cf176b86249929b70162b818fe, type: 2}
+  - {fileID: 11400000, guid: a6cb8b76e5cb59740afc94e34e990f1a, type: 2}
+  - {fileID: 11400000, guid: 586e67b98ace7604abffa536ed33cba7, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a239db908d54612bc6c8c6d6fc2dbdb, type: 3}
+  m_Name: EnemySpawnDataSmallExtraHp
+  m_EditorClassIdentifier: 
+  Description: 
+  FlagsOnEnable: 0
+  m_value:
+    EnemyData: {fileID: 11400000, guid: d096f46c82f66634ea443c06a5acf834, type: 2}
+    SpawnForces:
+    - {fileID: 11400000, guid: 9f4dc12f7de037c4d93bac42ef3f56fa, type: 2}
+    - {fileID: 11400000, guid: 4c948ae626091ed459b9750e556d2e2d, type: 2}

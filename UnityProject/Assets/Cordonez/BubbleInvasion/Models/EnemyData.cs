@@ -1,5 +1,4 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Cordonez.BubbleInvasion.Models
 {
@@ -7,9 +6,12 @@ namespace Cordonez.BubbleInvasion.Models
 	public class EnemyData
 	{
 		public GameObject Prefab;
-		public int Size;
-		public SO_EnemySpawnData[] OnDestroyEnemies = new SO_EnemySpawnData[] { };
-		public GameObject[] OnDestroyPrefabs = new GameObject[] { };
-		public SO_Vector2 Velocity;
+		public int Hp;
+		public float Size;
+		public float HorizontalVelocity;
+		public float JumpForce;
+		public float GravityScale;
+		public SO_EnemySpawnData[] OnDestroyEnemies = { };
+		public GameObject[] OnDestroyPrefabs = { };
 	}
 }

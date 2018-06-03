@@ -8,9 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b06ed7ca8b2a4a5bb0c02f4ce8768194, type: 3}
-  m_Name: SpeedFast
+  m_Script: {fileID: 11500000, guid: 5bf1c8b0f4324d4f82654a3f4ed7ff0a, type: 3}
+  m_Name: Scene Test2 - Extra Large
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
-  m_value: {x: 4, y: 12}
+  m_value: {fileID: 102900000, guid: 5fd5aa0639d7cfe43a0aba8efd5d4623, type: 3}

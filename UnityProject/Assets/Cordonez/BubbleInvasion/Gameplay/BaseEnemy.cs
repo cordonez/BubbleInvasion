@@ -15,17 +15,24 @@ namespace Cordonez.BubbleInvasion.Gameplay
 		public SO_EnemyData EnemyData { get; private set; }
 
 		private Rigidbody2D m_rigidbody2D;
+		public int CurrentHp { get; private set; }
 
 		public void Init(SO_EnemyData _data, SO_Vector2 _spawnForce)
 		{
 			EnemyData = _data;
+			CurrentHp = _data.Value.Hp;
 			transform.localScale = new Vector3(_data.Value.Size, _data.Value.Size, 1);
+			m_rigidbody2D.gravityScale = _data.Value.GravityScale;
 			m_rigidbody2D.AddForce(_spawnForce.Value, ForceMode2D.Force);
 		}
 
 		public void BulletHit()
 		{
-			Die();
+			CurrentHp--;
+			if (CurrentHp == 0)
+			{
+				Die();
+			}
 		}
 
 		public void Die()
@@ -57,8 +64,8 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			if (FloorLayermask.ContainsLayer(_other.gameObject.layer))
 			{
 				Vector2 newVelocity = m_rigidbody2D.velocity;
-				newVelocity.x = newVelocity.x > 0 ? EnemyData.Value.Velocity.Value.x : -EnemyData.Value.Velocity.Value.x;
-				newVelocity.y = EnemyData.Value.Velocity.Value.y;
+				newVelocity.x = newVelocity.x > 0 ? EnemyData.Value.HorizontalVelocity : -EnemyData.Value.HorizontalVelocity;
+				newVelocity.y = EnemyData.Value.JumpForce;
 				m_rigidbody2D.velocity = newVelocity;
 			}
 
