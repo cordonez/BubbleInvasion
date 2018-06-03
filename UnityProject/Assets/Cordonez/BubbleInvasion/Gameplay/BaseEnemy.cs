@@ -28,7 +28,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			Die();
 		}
 
-		private void Die()
+		public void Die()
 		{
 			foreach (GameObject prefab in EnemyData.Value.OnDestroyPrefabs)
 			{

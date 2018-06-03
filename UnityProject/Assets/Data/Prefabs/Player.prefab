@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 212433402052017036}
   - component: {fileID: 61201042288131124}
   - component: {fileID: 114692988292731178}
+  - component: {fileID: 114790234810353720}
   m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -192,6 +193,19 @@ MonoBehaviour:
   MoveRight: {fileID: 11400000, guid: 4d2d8c1a6502e144998ab4650ebfd05d, type: 2}
   MoveRightStopped: {fileID: 11400000, guid: fb1257356ea481c4495e411b7f85e0ad, type: 2}
   Jump: {fileID: 11400000, guid: 684eda0bc01dad84a91029b13a1aaf48, type: 2}
+  ForceJump: {fileID: 11400000, guid: c882cd4886268824498423b694e86497, type: 2}
+--- !u!114 &114790234810353720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983745422516110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5060502a0747435e88bd60f148954ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForcePlayerJump: {fileID: 11400000, guid: c882cd4886268824498423b694e86497, type: 2}
 --- !u!212 &212060877211951908
 SpriteRenderer:
   m_ObjectHideFlags: 1

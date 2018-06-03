@@ -6,5 +6,6 @@
 
 		void Init(SO_EnemyData _data);
 		void BulletHit();
+		void Die();
 	}
 }

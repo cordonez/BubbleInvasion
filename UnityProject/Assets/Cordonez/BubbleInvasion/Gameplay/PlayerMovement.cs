@@ -16,6 +16,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 		public SOEvent_void MoveRight;
 		public SOEvent_void MoveRightStopped;
 		public SOEvent_void Jump;
+		public SOEvent_void ForceJump;
 
 		private Rigidbody2D m_rigidbody2D;
 
@@ -31,6 +32,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			MoveRight.AddListener(OnMoveRight);
 			MoveRightStopped.AddListener(OnMoveRightStopped);
 			Jump.AddListener(OnJump);
+			ForceJump.AddListener(PlayerJump);
 		}
 
 		private void OnMoveRightStopped()
@@ -56,6 +58,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			MoveRight.RemoveListener(OnMoveRight);
 			MoveRightStopped.RemoveListener(OnMoveRightStopped);
 			Jump.RemoveListener(OnJump);
+			ForceJump.RemoveListener(PlayerJump);
 		}
 
 		private void OnMoveRight()
@@ -72,8 +75,13 @@ namespace Cordonez.BubbleInvasion.Gameplay
 		{
 			if (PlayerIsGrounded)
 			{
-				m_rigidbody2D.AddForce(Vector2.up * JumpForce);
+				PlayerJump();
 			}
+		}
+
+		private void PlayerJump()
+		{
+			m_rigidbody2D.AddForce(Vector2.up * JumpForce);
 		}
 	}
 }
