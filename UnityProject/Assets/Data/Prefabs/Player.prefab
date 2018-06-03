@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21379ae65c47b346b984cbac68448a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GroundLayermask: {fileID: 11400000, guid: d39dfe34964bdf348be98723065b30e4, type: 2}
   PlayerIsGrounded: {fileID: 11400000, guid: c72f4d9a2a37f494b993c05c5365a93c, type: 2}
 --- !u!114 &114789643885125976
 MonoBehaviour:
@@ -205,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5060502a0747435e88bd60f148954ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyLayermask: {fileID: 11400000, guid: b76238d6a67d78f43a2bdf10d08c1d72, type: 2}
   ForcePlayerJump: {fileID: 11400000, guid: c882cd4886268824498423b694e86497, type: 2}
 --- !u!212 &212060877211951908
 SpriteRenderer:

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dae4d9487ce462696bc201016735e8e, type: 3}
-  m_Name: EnemyLargeRight
+  m_Name: EnemyLarge
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
@@ -17,9 +17,6 @@ MonoBehaviour:
     Prefab: {fileID: 1727955336101672, guid: 2891433ce6b0833439fddb26632c5031, type: 2}
     Size: 8
     OnDestroyEnemies:
-    - {fileID: 11400000, guid: 113072aecf3b9974e8d15e7fc9230668, type: 2}
-    - {fileID: 11400000, guid: 64fd2cda8b761254097240ed112ff494, type: 2}
+    - {fileID: 11400000, guid: 5686c724cad4bdc48a2ca789e9285159, type: 2}
     OnDestroyPrefabs: []
-    Velocity: {x: 4, y: 12}
-    SpawnForce:
-    - {fileID: 11400000, guid: 4c948ae626091ed459b9750e556d2e2d, type: 2}
+    Velocity: {fileID: 11400000, guid: ea05a71abe1e2824a8eec5ab813e14f7, type: 2}

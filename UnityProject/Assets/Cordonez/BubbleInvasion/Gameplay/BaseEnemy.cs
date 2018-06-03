@@ -16,11 +16,11 @@ namespace Cordonez.BubbleInvasion.Gameplay
 
 		private Rigidbody2D m_rigidbody2D;
 
-		public void Init(SO_EnemyData _data)
+		public void Init(SO_EnemyData _data, SO_Vector2 _spawnForce)
 		{
 			EnemyData = _data;
 			transform.localScale = new Vector3(_data.Value.Size, _data.Value.Size, 1);
-			m_rigidbody2D.AddForce(EnemyData.Value.SpawnForce[0].Value, ForceMode2D.Force);
+			m_rigidbody2D.AddForce(_spawnForce.Value, ForceMode2D.Force);
 		}
 
 		public void BulletHit()
@@ -35,10 +35,13 @@ namespace Cordonez.BubbleInvasion.Gameplay
 				Instantiate(prefab, transform.position, Quaternion.identity);
 			}
 
-			foreach (SO_EnemyData enemy in EnemyData.Value.OnDestroyEnemies)
+			foreach (SO_EnemySpawnData enemySpawnData in EnemyData.Value.OnDestroyEnemies)
 			{
-				GameObject enemyinstanced = Instantiate(enemy.Value.Prefab, transform.position, Quaternion.identity);
-				enemyinstanced.GetComponent<IEnemy>().Init(enemy);
+				foreach (SO_Vector2 spawnForce in enemySpawnData.Value.SpawnForces)
+				{
+					GameObject enemyinstanced = Instantiate(enemySpawnData.Value.EnemyData.Value.Prefab, transform.position, Quaternion.identity);
+					enemyinstanced.GetComponent<IEnemy>().Init(enemySpawnData.Value.EnemyData, spawnForce);
+				}
 			}
 
 			Destroy(gameObject);
@@ -54,8 +57,8 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			if (FloorLayermask.ContainsLayer(_other.gameObject.layer))
 			{
 				Vector2 newVelocity = m_rigidbody2D.velocity;
-				newVelocity.x = newVelocity.x > 0 ? EnemyData.Value.Velocity.x : -EnemyData.Value.Velocity.x;
-				newVelocity.y = EnemyData.Value.Velocity.y;
+				newVelocity.x = newVelocity.x > 0 ? EnemyData.Value.Velocity.Value.x : -EnemyData.Value.Velocity.Value.x;
+				newVelocity.y = EnemyData.Value.Velocity.Value.y;
 				m_rigidbody2D.velocity = newVelocity;
 			}
 

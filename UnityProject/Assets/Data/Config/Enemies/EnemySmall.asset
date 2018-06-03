@@ -9,17 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dae4d9487ce462696bc201016735e8e, type: 3}
-  m_Name: EnemyMediumLeft
+  m_Name: EnemySmall
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
   m_value:
     Prefab: {fileID: 1727955336101672, guid: 2891433ce6b0833439fddb26632c5031, type: 2}
-    Size: 4
-    OnDestroyEnemies:
-    - {fileID: 11400000, guid: c5e6fa73d3fd7a34194624cae5fe8056, type: 2}
-    - {fileID: 11400000, guid: 7ba7ab6a2298f8f4ba280a7017d0c7c5, type: 2}
-    OnDestroyPrefabs: []
-    Velocity: {x: 4, y: 11}
-    SpawnForce:
-    - {fileID: 11400000, guid: 9f4dc12f7de037c4d93bac42ef3f56fa, type: 2}
+    Size: 2
+    OnDestroyEnemies: []
+    OnDestroyPrefabs:
+    - {fileID: 1881921338000454, guid: 2cc73ad227931ab44a43b0b731b24fca, type: 2}
+    Velocity: {fileID: 11400000, guid: 294c8b861b03ebd448c52e5fd18efd87, type: 2}

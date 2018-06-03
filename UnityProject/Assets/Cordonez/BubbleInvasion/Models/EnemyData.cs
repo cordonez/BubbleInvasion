@@ -8,9 +8,8 @@ namespace Cordonez.BubbleInvasion.Models
 	{
 		public GameObject Prefab;
 		public int Size;
-		public SO_EnemyData[] OnDestroyEnemies = new SO_EnemyData[] { };
+		public SO_EnemySpawnData[] OnDestroyEnemies = new SO_EnemySpawnData[] { };
 		public GameObject[] OnDestroyPrefabs = new GameObject[] { };
-		public Vector2 Velocity;
-		public SO_Vector2[] SpawnForce = new SO_Vector2[] { };
+		public SO_Vector2 Velocity;
 	}
 }

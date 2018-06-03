@@ -1,25 +1,22 @@
 ﻿using Cordonez.BubbleInvasion.Models;
+using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
 using UnityEngine;
 
 namespace Cordonez.BubbleInvasion.Gameplay
 {
 	public class BasicEnemySpawner : MonoBehaviour
 	{
-		[System.Serializable]
-		public struct SpawnPoint
-		{
-			public Transform Point;
-			public SO_EnemyData Enemy;
-		}
-
 		public SpawnPoint[] SpawnPoints;
 
 		private void Start()
 		{
 			foreach (SpawnPoint spawnPoint in SpawnPoints)
 			{
-				GameObject instaced = Instantiate(spawnPoint.Enemy.Value.Prefab, spawnPoint.Point.position, Quaternion.identity);
-				instaced.GetComponent<IEnemy>().Init(spawnPoint.Enemy);
+				foreach (SO_Vector2 spawnForce in spawnPoint.SpawnForces)
+				{
+					GameObject instaced = Instantiate(spawnPoint.Enemy.Value.Prefab, spawnPoint.Point.position, Quaternion.identity);
+					instaced.GetComponent<IEnemy>().Init(spawnPoint.Enemy, spawnForce);
+				}
 			}
 		}
 	}
