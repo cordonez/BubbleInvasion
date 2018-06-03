@@ -389,8 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Worlds:
-  - {fileID: 11400000, guid: 3c83ef39f9c9fd1498940f03d76ee863, type: 2}
-  - {fileID: 11400000, guid: 4db73e8a96142f24c80dc12c25ca516b, type: 2}
+  - {fileID: 11400000, guid: a7c5a37638a33014a960e8129a4741ff, type: 2}
   WorldContainer: {fileID: 1237537028509290, guid: 17ad103c850f0004f905bc1a04b5b4b2,
     type: 2}
   ButtonLevel: {fileID: 1831232872409356, guid: 3c282f7a7195c724a809b1e080974839,
@@ -411,7 +410,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 1
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1

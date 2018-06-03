@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dae4d9487ce462696bc201016735e8e, type: 3}
+  m_Name: Ufo
+  m_EditorClassIdentifier: 
+  Description: 
+  FlagsOnEnable: 0
+  m_value:
+    Prefab: {fileID: 1727955336101672, guid: f22868df47944ba45ba03695a2374283, type: 2}
+    Hp: 5
+    Size: 4
+    HorizontalVelocity: 4
+    JumpForce: 0
+    GravityScale: 0
+    SpawnFreq: 5
+    Spawn:
+    - {fileID: 11400000, guid: 918a92856347bdd4dbce87937cfffac6, type: 2}
+    OnDestroyEnemies: []
+    OnDestroyPrefabs:
+    - {fileID: 1881921338000454, guid: 2cc73ad227931ab44a43b0b731b24fca, type: 2}

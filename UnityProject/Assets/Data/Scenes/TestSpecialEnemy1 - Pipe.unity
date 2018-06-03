@@ -218,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 178721855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 3, z: 0}
+  m_LocalPosition: {x: 3, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1999819551}
@@ -350,7 +350,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 724624576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 3, z: 0}
+  m_LocalPosition: {x: -3, y: 5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1999819551}
@@ -472,13 +472,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnPoints:
   - Point: {fileID: 178721856}
-    Enemy: {fileID: 11400000, guid: 7c2e2a0ceb025ac40931d1e8d12b8416, type: 2}
+    Enemy: {fileID: 11400000, guid: 64aab65be7f0d664b8085981f7047010, type: 2}
     SpawnForces:
-    - {fileID: 11400000, guid: 4c948ae626091ed459b9750e556d2e2d, type: 2}
+    - {fileID: 11400000, guid: e627f924803013045972c407b8a500c3, type: 2}
   - Point: {fileID: 724624577}
-    Enemy: {fileID: 11400000, guid: 7c2e2a0ceb025ac40931d1e8d12b8416, type: 2}
+    Enemy: {fileID: 11400000, guid: 64aab65be7f0d664b8085981f7047010, type: 2}
     SpawnForces:
-    - {fileID: 11400000, guid: 9f4dc12f7de037c4d93bac42ef3f56fa, type: 2}
+    - {fileID: 11400000, guid: e627f924803013045972c407b8a500c3, type: 2}
 --- !u!4 &1999819551
 Transform:
   m_ObjectHideFlags: 0

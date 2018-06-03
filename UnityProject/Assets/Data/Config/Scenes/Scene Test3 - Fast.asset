@@ -8,9 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf1c8b0f4324d4f82654a3f4ed7ff0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fdfbedd79f94d019508e7aa953d7faa, type: 3}
   m_Name: Scene Test3 - Fast
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
-  m_value: {fileID: 102900000, guid: d3d0f7e59b84d7846b83770cd117ed76, type: 3}
+  m_value: Assets/Data/Scenes/TestEnemy3 - Fast.unity

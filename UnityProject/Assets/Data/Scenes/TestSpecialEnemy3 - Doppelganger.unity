@@ -472,11 +472,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnPoints:
   - Point: {fileID: 178721856}
-    Enemy: {fileID: 11400000, guid: 7c2e2a0ceb025ac40931d1e8d12b8416, type: 2}
+    Enemy: {fileID: 11400000, guid: 4f56246a37f2edd42958db8c9e8f79b4, type: 2}
     SpawnForces:
     - {fileID: 11400000, guid: 4c948ae626091ed459b9750e556d2e2d, type: 2}
   - Point: {fileID: 724624577}
-    Enemy: {fileID: 11400000, guid: 7c2e2a0ceb025ac40931d1e8d12b8416, type: 2}
+    Enemy: {fileID: 11400000, guid: 4f56246a37f2edd42958db8c9e8f79b4, type: 2}
     SpawnForces:
     - {fileID: 11400000, guid: 9f4dc12f7de037c4d93bac42ef3f56fa, type: 2}
 --- !u!4 &1999819551

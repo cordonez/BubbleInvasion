@@ -1,5 +1,4 @@
-﻿using Cordonez.BubbleInvasion.Models;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
+﻿using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
 using UnityEngine;
 
 namespace Cordonez.BubbleInvasion.Gameplay

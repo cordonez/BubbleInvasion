@@ -1,24 +1,25 @@
-﻿using UnityEngine;
+﻿using Cordonez.BubbleInvasion.Models;
+using UnityEngine;
 
 namespace Cordonez.BubbleInvasion.Gameplay
 {
-	[RequireComponent(typeof(BaseEnemy), typeof(SpriteRenderer))]
+	[RequireComponent(typeof(IEnemy), typeof(SpriteRenderer))]
 	public class EnemyHpVisualizer : MonoBehaviour
 	{
 		public Color[] HpColors;
 
-		private BaseEnemy m_baseEnemy;
+		private IEnemy m_enemy;
 		private SpriteRenderer m_sprite;
 
 		private void Awake()
 		{
-			m_baseEnemy = GetComponent<BaseEnemy>();
+			m_enemy = GetComponent<IEnemy>();
 			m_sprite = GetComponent<SpriteRenderer>();
 		}
 
 		private void Update()
 		{
-			m_sprite.color = HpColors[m_baseEnemy.CurrentHp];
+			m_sprite.color = HpColors[m_enemy.CurrentHp];
 		}
 	}
 }

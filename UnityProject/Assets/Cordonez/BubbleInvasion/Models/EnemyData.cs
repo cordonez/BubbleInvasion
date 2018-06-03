@@ -11,6 +11,8 @@ namespace Cordonez.BubbleInvasion.Models
 		public float HorizontalVelocity;
 		public float JumpForce;
 		public float GravityScale;
+		public float SpawnFreq;
+		public SO_EnemySpawnData[] Spawn;
 		public SO_EnemySpawnData[] OnDestroyEnemies = { };
 		public GameObject[] OnDestroyPrefabs = { };
 	}

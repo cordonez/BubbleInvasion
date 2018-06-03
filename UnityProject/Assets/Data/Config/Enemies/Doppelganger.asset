@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dae4d9487ce462696bc201016735e8e, type: 3}
+  m_Name: Doppelganger
+  m_EditorClassIdentifier: 
+  Description: 
+  FlagsOnEnable: 0
+  m_value:
+    Prefab: {fileID: 1727955336101672, guid: 576e13952aea00842af970c66d93eb07, type: 2}
+    Hp: 5
+    Size: 8
+    HorizontalVelocity: 4
+    JumpForce: 12
+    GravityScale: 1
+    SpawnFreq: 7.5
+    Spawn:
+    - {fileID: 11400000, guid: 86c86803299f4034e9f020c9830ad159, type: 2}
+    OnDestroyEnemies:
+    - {fileID: 11400000, guid: 5686c724cad4bdc48a2ca789e9285159, type: 2}
+    OnDestroyPrefabs: []
