@@ -1,3 +1,3 @@
 # BubbleInvasion
 
-WIP game inspired by Pang
+WIP hobby game inspired by Pang
