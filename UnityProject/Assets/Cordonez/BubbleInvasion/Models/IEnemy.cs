@@ -1,4 +1,5 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
+﻿using Cordonez.BubbleInvasion.DataModels;
+using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
 
 namespace Cordonez.BubbleInvasion.Models
 {

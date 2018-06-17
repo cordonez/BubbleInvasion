@@ -1,4 +1,5 @@
-﻿using Cordonez.BubbleInvasion.Models;
+﻿using Cordonez.BubbleInvasion.DataModels;
+using Cordonez.BubbleInvasion.Models;
 using UnityEngine;
 
 namespace Cordonez.BubbleInvasion.Gameplay

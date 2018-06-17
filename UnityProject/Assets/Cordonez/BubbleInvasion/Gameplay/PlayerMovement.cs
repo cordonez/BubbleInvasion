@@ -81,7 +81,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 
 		private void PlayerJump()
 		{
-			m_rigidbody2D.AddForce(Vector2.up * JumpForce);
+			m_rigidbody2D.velocity = new Vector2(m_rigidbody2D.velocity.x, JumpForce);
 		}
 	}
 }

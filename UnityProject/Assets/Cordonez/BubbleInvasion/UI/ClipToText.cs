@@ -1,4 +1,4 @@
-﻿using Cordonez.BubbleInvasion.Models;
+﻿using Cordonez.BubbleInvasion.DataModels;
 using Cordonez.Modules.CustomScriptableObjects.Core.Events;
 using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
 using UnityEngine;
@@ -12,7 +12,6 @@ namespace Cordonez.BubbleInvasion.UI
 		public SO_WeaponData CurrentWeapon;
 		public SOEvent_void WeaponUpdated;
 		public SO_int BulletsLeft;
-		public SOEvent_void BulletsLeftUpdated;
 
 		private Text m_text;
 		private string m_maxClipSize;
@@ -25,20 +24,19 @@ namespace Cordonez.BubbleInvasion.UI
 
 		private void OnEnable()
 		{
-			BulletsLeftUpdated.AddListener(OnBulletsLeftUpdated);
+			BulletsLeft.AddListenerOnUpdate(OnBulletsLeftUpdated);
 			WeaponUpdated.AddListener(OnWeaponUpdated);
 		}
 
 		private void OnDisable()
 		{
-			BulletsLeftUpdated.RemoveListener(OnBulletsLeftUpdated);
+			BulletsLeft.RemoveListenerOnUpdate(OnBulletsLeftUpdated);
 			WeaponUpdated.RemoveListener(OnWeaponUpdated);
 		}
 
 		private void OnBulletsLeftUpdated()
 		{
 			m_text.text = BulletsLeft.Value + m_maxClipSize;
-
 		}
 
 		private void OnWeaponUpdated()

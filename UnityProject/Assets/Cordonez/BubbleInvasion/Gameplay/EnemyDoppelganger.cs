@@ -1,6 +1,6 @@
 ﻿using System.Collections;
+using Cordonez.BubbleInvasion.DataModels;
 using Cordonez.BubbleInvasion.Models;
-using Cordonez.Modules.CustomScriptableObjects.Core.Events;
 using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
 using UnityEngine;
 
@@ -8,11 +8,6 @@ namespace Cordonez.BubbleInvasion.Gameplay
 {
 	public class EnemyDoppelganger : BaseEnemy
 	{
-		public SO_Layermask FloorLayermask;
-		public SO_Layermask PlayerLayermask;
-		public SOEvent_void PlayerDeath;
-
-
 		public override void Init(SO_EnemyData _data, SO_Vector2 _spawnForce)
 		{
 			EnemyData = _data;
@@ -34,23 +29,8 @@ namespace Cordonez.BubbleInvasion.Gameplay
 					enemyinstanced.GetComponent<IEnemy>().Init(enemySpawnData.Value.EnemyData, spawnForce);
 				}
 			}
+
 			Destroy(gameObject);
-		}
-
-		private void OnCollisionEnter2D(Collision2D _other)
-		{
-			if (FloorLayermask.ContainsLayer(_other.gameObject.layer))
-			{
-				Vector2 newVelocity = Rigidbody2D.velocity;
-				newVelocity.x = newVelocity.x > 0 ? EnemyData.Value.HorizontalVelocity : -EnemyData.Value.HorizontalVelocity;
-				newVelocity.y = EnemyData.Value.JumpForce;
-				Rigidbody2D.velocity = newVelocity;
-			}
-
-			if (PlayerLayermask.ContainsLayer(_other.gameObject.layer))
-			{
-				PlayerDeath.Invoke();
-			}
 		}
 	}
 }

@@ -19,7 +19,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 
 		private void Update()
 		{
-			m_sprite.color = HpColors[m_enemy.CurrentHp];
+			m_sprite.color = HpColors[Mathf.Clamp(m_enemy.CurrentHp, 0, HpColors.Length)];
 		}
 	}
 }

@@ -133,7 +133,6 @@ MonoBehaviour:
   CurrentWeapon: {fileID: 11400000, guid: 67496ef2c4252484496ded30f66b6859, type: 2}
   WeaponUpdated: {fileID: 11400000, guid: 7c103d4814f77a84db9f3f7771762980, type: 2}
   BulletsLeft: {fileID: 11400000, guid: bc7f1c2c1b1eb8a4589a89a218f6e2b0, type: 2}
-  BulletsLeftUpdated: {fileID: 11400000, guid: e7a1bfa059a44f846bd01a83b1cf9933, type: 2}
 --- !u!114 &114079408852965982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,7 +223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScriptableVariable: {fileID: 11400000, guid: 1c2cd47a6ab4775458e49622c8a92670, type: 2}
-  ValueUpdated: {fileID: 11400000, guid: cc80dff3c04bf3444a8179bc0c9073ab, type: 2}
 --- !u!114 &114637429290960790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -408,7 +406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScriptableVariable: {fileID: 11400000, guid: d4058defa6142014b9399dfb4fc30e68, type: 2}
-  ValueUpdated: {fileID: 11400000, guid: fe09e897a2239c241a317bef44465851, type: 2}
 --- !u!222 &222019554577949146
 CanvasRenderer:
   m_ObjectHideFlags: 1

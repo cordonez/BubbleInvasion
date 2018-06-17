@@ -16,30 +16,30 @@ namespace Cordonez.BubbleInvasion.Gameplay
 		{
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
-				Jump.Invoke();
-			}
-
-			if (Input.GetMouseButtonDown(0))
-			{
 				Shoot.Invoke();
 			}
 
-			if (Input.GetKey(KeyCode.D))
+			if (Input.GetKeyDown(KeyCode.UpArrow))
+			{
+				Jump.Invoke();
+			}
+
+			if (Input.GetKey(KeyCode.RightArrow))
 			{
 				MoveRight.Invoke();
 			}
 
-			if (Input.GetKeyUp(KeyCode.D))
+			if (Input.GetKeyUp(KeyCode.RightArrow))
 			{
 				MoveRightStopped.Invoke();
 			}
 
-			if (Input.GetKey(KeyCode.A))
+			if (Input.GetKey(KeyCode.LeftArrow))
 			{
 				MoveLeft.Invoke();
 			}
 
-			if (Input.GetKeyUp(KeyCode.A))
+			if (Input.GetKeyUp(KeyCode.LeftArrow))
 			{
 				MoveLeftStopped.Invoke();
 			}

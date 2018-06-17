@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Cordonez.BubbleInvasion.DataModels;
 using Cordonez.BubbleInvasion.Models;
 using Cordonez.Modules.CustomScriptableObjects.Core.Events;
 using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
@@ -8,10 +9,9 @@ namespace Cordonez.BubbleInvasion.Gameplay
 {
 	public class FireBullet : MonoBehaviour
 	{
-		public SOEvent_void ShootRequest;
-		public SO_WeaponData WeaponData;
 		public SO_int BulletsLeft;
-		public SOEvent_void BulletsLeftUpdated;
+		public SO_WeaponData WeaponData;
+		public SOEvent_void ShootRequest;
 
 		private float m_nextFireTime;
 
@@ -47,7 +47,6 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			bullet.Shoot();
 			m_nextFireTime = Time.time + 1f / WeaponData.Value.WeaponParams.Value.FireRatePerSecond;
 			BulletsLeft.Value = BulletsLeft - 1;
-			BulletsLeftUpdated.Invoke();
 		}
 
 		private IEnumerator Reload()
@@ -55,7 +54,6 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			m_nextFireTime = Time.time + 1f / WeaponData.Value.WeaponParams.Value.ReloadTime;
 			yield return new WaitForSeconds(WeaponData.Value.WeaponParams.Value.ReloadTime);
 			BulletsLeft.Value = WeaponData.Value.WeaponParams.Value.ClipSize;
-			BulletsLeftUpdated.Invoke();
 		}
 	}
 }

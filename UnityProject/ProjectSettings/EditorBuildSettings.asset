@@ -30,11 +30,11 @@ EditorBuildSettings:
     path: Assets/Data/Scenes/TestEnemy5 - 2 Hp.unity
     guid: 600d35da17dc83f45bdbcf660c9cf742
   - enabled: 1
-    path: Assets/Data/Scenes/TestSpecialEnemy1.unity
+    path: Assets/Data/Scenes/TestSpecialEnemy1 - Pipe.unity
     guid: 0a25972e02b115a41b87a1dccc85b992
   - enabled: 1
-    path: Assets/Data/Scenes/TestSpecialEnemy2.unity
+    path: Assets/Data/Scenes/TestSpecialEnemy2 - Ufo.unity
     guid: 10c30d0de2c8ea0439825c953c826086
   - enabled: 1
-    path: Assets/Data/Scenes/TestSpecialEnemy3.unity
+    path: Assets/Data/Scenes/TestSpecialEnemy3 - Doppelganger.unity
     guid: ba87322f2c2e41a439d9cb1d5f7ba4ef

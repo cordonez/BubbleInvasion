@@ -19,11 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4891160092397186}
+  - component: {fileID: 114088370371489978}
   - component: {fileID: 212883131700087710}
   - component: {fileID: 50119983017376676}
   - component: {fileID: 58590704402418588}
   - component: {fileID: 114381498305396990}
-  - component: {fileID: 114088370371489978}
   m_Layer: 11
   m_Name: EnemyPipe
   m_TagString: Untagged
@@ -73,7 +73,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -90,6 +90,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967e25dc10684a859d948bcba48d093e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloorLayermask: {fileID: 11400000, guid: d39dfe34964bdf348be98723065b30e4, type: 2}
+  WallLayermask: {fileID: 11400000, guid: 7c2ef2cdb41b7ae4183f3e4bdc50fd6a, type: 2}
+  PlayerLayermask: {fileID: 11400000, guid: 1677f69a8c4ceb9439123b1de5da56bd, type: 2}
+  PlayerDeath: {fileID: 11400000, guid: 046427aa016a488418eebc5f2c32137c, type: 2}
+  ForcePlayerJump: {fileID: 11400000, guid: c882cd4886268824498423b694e86497, type: 2}
 --- !u!114 &114381498305396990
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -91,10 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerLayermask: {fileID: 11400000, guid: 1677f69a8c4ceb9439123b1de5da56bd, type: 2}
   Coins: {fileID: 11400000, guid: d4058defa6142014b9399dfb4fc30e68, type: 2}
-  CoinsUpdated: {fileID: 11400000, guid: fe09e897a2239c241a317bef44465851, type: 2}
   SpawnForce:
-  - {fileID: 11400000, guid: 9f4dc12f7de037c4d93bac42ef3f56fa, type: 2}
-  - {fileID: 11400000, guid: 4c948ae626091ed459b9750e556d2e2d, type: 2}
+  - {fileID: 11400000, guid: e627f924803013045972c407b8a500c3, type: 2}
 --- !u!212 &212403727028922170
 SpriteRenderer:
   m_ObjectHideFlags: 1

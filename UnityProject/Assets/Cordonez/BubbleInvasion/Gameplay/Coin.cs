@@ -1,5 +1,4 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
+﻿using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
 using UnityEngine;
 
 namespace Cordonez.BubbleInvasion.Gameplay
@@ -9,7 +8,6 @@ namespace Cordonez.BubbleInvasion.Gameplay
 	{
 		public SO_Layermask PlayerLayermask;
 		public SO_int Coins;
-		public SOEvent_void CoinsUpdated;
 		public SO_Vector2[] SpawnForce;
 
 		private Rigidbody2D m_rigidbody2D;
@@ -29,7 +27,6 @@ namespace Cordonez.BubbleInvasion.Gameplay
 			if (PlayerLayermask.ContainsLayer(_other.gameObject.layer))
 			{
 				Coins.Value = Coins.Value + 1;
-				CoinsUpdated.Invoke();
 				Destroy(gameObject);
 			}
 		}
