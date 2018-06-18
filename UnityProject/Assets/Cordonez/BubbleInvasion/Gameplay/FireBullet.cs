@@ -12,6 +12,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 		public SO_int BulletsLeft;
 		public SO_WeaponData WeaponData;
 		public SOEvent_void ShootRequest;
+		public SOEvent_void Shoot;
 
 		private float m_nextFireTime;
 
@@ -42,6 +43,7 @@ namespace Cordonez.BubbleInvasion.Gameplay
 
 		private void ShootBullet()
 		{
+			Shoot.Invoke();
 			IBullet bullet = Instantiate(WeaponData.Value.BulletData.Value.BulletPrefab, transform.position, Quaternion.identity).GetComponent<IBullet>();
 			bullet.BulletData = WeaponData.Value.BulletData;
 			bullet.Shoot();
