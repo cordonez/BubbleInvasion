@@ -15,10 +15,13 @@ MonoBehaviour:
   FlagsOnEnable: 0
   m_value:
     Prefab: {fileID: 1727955336101672, guid: 2891433ce6b0833439fddb26632c5031, type: 2}
+    Hp: 0
     Size: 2
-    HorizontalVelocity: 8
+    HorizontalVelocity: 6
     JumpForce: 11
     GravityScale: 2
+    SpawnFreq: 0
+    Spawn: []
     OnDestroyEnemies: []
     OnDestroyPrefabs:
     - {fileID: 1881921338000454, guid: 2cc73ad227931ab44a43b0b731b24fca, type: 2}

@@ -16,4 +16,4 @@ MonoBehaviour:
   m_value:
     BulletPrefab: {fileID: 1961917460563600, guid: 659a32dc69b4f3c468664095ef41a1b8,
       type: 2}
-    Speed: 9
+    Speed: 15

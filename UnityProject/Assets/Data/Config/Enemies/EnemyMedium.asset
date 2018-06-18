@@ -17,9 +17,11 @@ MonoBehaviour:
     Prefab: {fileID: 1727955336101672, guid: 2891433ce6b0833439fddb26632c5031, type: 2}
     Hp: 1
     Size: 4
-    HorizontalVelocity: 4
+    HorizontalVelocity: 2.5
     JumpForce: 11
     GravityScale: 1
+    SpawnFreq: 0
+    Spawn: []
     OnDestroyEnemies:
     - {fileID: 11400000, guid: 24719021e69461c40bc2b87eeef27185, type: 2}
     OnDestroyPrefabs: []

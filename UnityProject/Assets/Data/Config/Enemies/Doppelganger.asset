@@ -17,7 +17,7 @@ MonoBehaviour:
     Prefab: {fileID: 1727955336101672, guid: 576e13952aea00842af970c66d93eb07, type: 2}
     Hp: 5
     Size: 8
-    HorizontalVelocity: 4
+    HorizontalVelocity: 2.5
     JumpForce: 12
     GravityScale: 1
     SpawnFreq: 7.5

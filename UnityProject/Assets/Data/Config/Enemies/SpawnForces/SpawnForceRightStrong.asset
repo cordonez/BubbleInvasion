@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
-  m_value: {x: 300, y: 200}
+  m_value: {x: 200, y: 200}
