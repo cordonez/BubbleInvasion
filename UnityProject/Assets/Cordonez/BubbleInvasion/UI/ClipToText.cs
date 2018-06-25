@@ -28,21 +28,26 @@
 			WeaponUpdated.AddListener(OnWeaponUpdated);
 		}
 
+		private void OnBulletsLeftUpdated(int _arg1, int _arg2)
+		{
+			UpdateText(_arg2);
+		}
+
+		private void UpdateText(int _arg2)
+		{
+			m_text.text = _arg2 + m_maxClipSize;
+		}
+
 		private void OnDisable()
 		{
 			BulletsLeft.RemoveListenerOnUpdate(OnBulletsLeftUpdated);
 			WeaponUpdated.RemoveListener(OnWeaponUpdated);
 		}
 
-		private void OnBulletsLeftUpdated()
-		{
-			m_text.text = BulletsLeft.Value + m_maxClipSize;
-		}
-
 		private void OnWeaponUpdated()
 		{
 			m_maxClipSize = "/" + CurrentWeapon.Value.WeaponParams.Value.ClipSize;
-			OnBulletsLeftUpdated();
+			UpdateText(BulletsLeft);
 		}
 	}
 }
