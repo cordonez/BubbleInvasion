@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Cordonez.BubbleInvasion.DataModels
+﻿namespace Cordonez.BubbleInvasion.DataModels
 {
+	using System;
+
 	[Serializable]
 	public class WeaponData
 	{

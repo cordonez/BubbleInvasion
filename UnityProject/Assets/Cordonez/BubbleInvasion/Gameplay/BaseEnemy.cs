@@ -1,11 +1,11 @@
-﻿using Cordonez.BubbleInvasion.DataModels;
-using Cordonez.BubbleInvasion.Models;
-using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using DataModels;
+	using Models;
+	using Modules.CustomScriptableObjects.Core.Events;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+
 	[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 	public abstract class BaseEnemy : MonoBehaviour, IEnemy
 	{

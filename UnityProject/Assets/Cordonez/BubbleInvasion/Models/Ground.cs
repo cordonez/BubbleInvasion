@@ -1,9 +1,6 @@
-﻿using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Models
+﻿namespace Cordonez.BubbleInvasion.Models
 {
-	public class Ground : MonoBehaviour, IGround
-	{
+	using UnityEngine;
 
-	}
+	public class Ground : MonoBehaviour, IGround { }
 }

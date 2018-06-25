@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.DataModels
+﻿namespace Cordonez.BubbleInvasion.DataModels
 {
+	using UnityEngine;
+
 	[System.Serializable]
 	public class EnemyData
 	{

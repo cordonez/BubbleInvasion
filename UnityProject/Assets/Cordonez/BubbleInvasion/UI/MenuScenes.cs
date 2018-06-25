@@ -1,9 +1,9 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Collections;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.UI
+﻿namespace Cordonez.BubbleInvasion.UI
 {
+	using Modules.CustomScriptableObjects.Core.Collections;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+
 	public class MenuScenes : MonoBehaviour
 	{
 		public SOArray_Scene[] Worlds;

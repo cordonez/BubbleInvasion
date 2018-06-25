@@ -1,9 +1,9 @@
-﻿using Cordonez.BubbleInvasion.DataModels;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using DataModels;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+
 	public class BaseCircleEnemy : BaseEnemy
 	{
 		public override void Init(SO_EnemyData _data, SO_Vector2 _spawnForce)

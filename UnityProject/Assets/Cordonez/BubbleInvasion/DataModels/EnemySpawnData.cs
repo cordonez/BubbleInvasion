@@ -1,7 +1,7 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-
-namespace Cordonez.BubbleInvasion.DataModels
+﻿namespace Cordonez.BubbleInvasion.DataModels
 {
+	using Modules.CustomScriptableObjects.Core.Variables;
+
 	[System.Serializable]
 	public class EnemySpawnData
 	{

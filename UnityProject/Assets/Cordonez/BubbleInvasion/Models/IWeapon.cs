@@ -1,7 +1,7 @@
-﻿using Cordonez.BubbleInvasion.DataModels;
-
-namespace Cordonez.BubbleInvasion.Models
+﻿namespace Cordonez.BubbleInvasion.Models
 {
+	using DataModels;
+
 	public interface IWeapon
 	{
 		WeaponData WeaponData { get; set; }

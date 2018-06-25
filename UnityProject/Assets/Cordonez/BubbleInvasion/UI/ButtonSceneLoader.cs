@@ -1,11 +1,11 @@
-﻿using System.Linq;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-namespace Cordonez.BubbleInvasion.UI
+﻿namespace Cordonez.BubbleInvasion.UI
 {
+	using System.Linq;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+	using UnityEngine.SceneManagement;
+	using UnityEngine.UI;
+
 	[RequireComponent(typeof(Button))]
 	public class ButtonSceneLoader : MonoBehaviour
 	{
@@ -25,7 +25,6 @@ namespace Cordonez.BubbleInvasion.UI
 		private void Start()
 		{
 			GetComponent<Button>().onClick.AddListener(LoadScene);
-
 			if (Scene != null)
 			{
 				Init(Scene);

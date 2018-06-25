@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using Cordonez.BubbleInvasion.DataModels;
-using Cordonez.BubbleInvasion.Models;
-using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using System.Collections;
+	using DataModels;
+	using Models;
+	using Modules.CustomScriptableObjects.Core.Events;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+
 	public class FireBullet : MonoBehaviour
 	{
 		public SO_int BulletsLeft;

@@ -1,8 +1,8 @@
-﻿using Cordonez.BubbleInvasion.DataModels;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-
-namespace Cordonez.BubbleInvasion.Models
+﻿namespace Cordonez.BubbleInvasion.Models
 {
+	using DataModels;
+	using Modules.CustomScriptableObjects.Core.Variables;
+
 	public interface IEnemy
 	{
 		SO_EnemyData EnemyData { get; }

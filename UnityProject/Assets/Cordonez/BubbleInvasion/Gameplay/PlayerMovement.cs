@@ -1,9 +1,9 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using Modules.CustomScriptableObjects.Core.Events;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+
 	[RequireComponent(typeof(Rigidbody2D))]
 	public class PlayerMovement : MonoBehaviour
 	{

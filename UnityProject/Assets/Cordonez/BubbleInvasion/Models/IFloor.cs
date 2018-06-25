@@ -1,7 +1,4 @@
 ﻿namespace Cordonez.BubbleInvasion.Models
 {
-	public interface IFloor
-	{
-
-	}
+	public interface IFloor { }
 }

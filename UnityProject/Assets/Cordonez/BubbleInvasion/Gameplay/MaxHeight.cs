@@ -1,10 +1,7 @@
-﻿using Cordonez.BubbleInvasion.Models;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
-	public class MaxHeight : MonoBehaviour, IMaxHeight
-	{
+	using Models;
+	using UnityEngine;
 
-	}
+	public class MaxHeight : MonoBehaviour, IMaxHeight { }
 }

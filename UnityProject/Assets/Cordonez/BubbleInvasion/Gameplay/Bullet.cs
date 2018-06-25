@@ -1,9 +1,9 @@
-﻿using Cordonez.BubbleInvasion.DataModels;
-using Cordonez.BubbleInvasion.Models;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using DataModels;
+	using Models;
+	using UnityEngine;
+
 	[RequireComponent(typeof(Collider2D))]
 	[RequireComponent(typeof(Rigidbody2D))]
 	public class Bullet : MonoBehaviour, IBullet

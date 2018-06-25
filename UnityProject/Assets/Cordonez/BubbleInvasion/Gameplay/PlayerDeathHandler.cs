@@ -1,9 +1,9 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using Modules.CustomScriptableObjects.Core.Events;
+	using UnityEngine;
+	using UnityEngine.SceneManagement;
+
 	public class PlayerDeathHandler : MonoBehaviour
 	{
 		public SOEvent_void PlayerDeath;

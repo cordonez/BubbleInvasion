@@ -1,8 +1,8 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using Modules.CustomScriptableObjects.Core.Events;
+	using UnityEngine;
+
 	[RequireComponent(typeof(Animator))]
 	public class MonkeyAnimatorController : MonoBehaviour
 	{
@@ -17,9 +17,9 @@ namespace Cordonez.BubbleInvasion.Gameplay
 		private readonly int m_shoot = Animator.StringToHash("Shoot");
 		private readonly int m_move = Animator.StringToHash("Move");
 
-		private Vector3 m_front = new Vector3(0, 180, 0);
-		private Vector3 m_right = new Vector3(0, 90, 0);
-		private Vector3 m_left = new Vector3(0, -90, 0);
+		private readonly Vector3 m_front = new Vector3(0, 180, 0);
+		private readonly Vector3 m_right = new Vector3(0, 90, 0);
+		private readonly Vector3 m_left = new Vector3(0, -90, 0);
 
 		private void Awake()
 		{

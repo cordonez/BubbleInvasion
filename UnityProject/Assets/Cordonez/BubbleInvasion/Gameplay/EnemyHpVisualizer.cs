@@ -1,8 +1,8 @@
-﻿using Cordonez.BubbleInvasion.Models;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using Models;
+	using UnityEngine;
+
 	[RequireComponent(typeof(IEnemy), typeof(SpriteRenderer))]
 	public class EnemyHpVisualizer : MonoBehaviour
 	{

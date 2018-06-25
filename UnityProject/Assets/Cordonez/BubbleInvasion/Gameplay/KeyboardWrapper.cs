@@ -1,8 +1,8 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.Gameplay
+﻿namespace Cordonez.BubbleInvasion.Gameplay
 {
+	using Modules.CustomScriptableObjects.Core.Events;
+	using UnityEngine;
+
 	public class KeyboardWrapper : MonoBehaviour
 	{
 		public SOEvent_void MoveLeft;

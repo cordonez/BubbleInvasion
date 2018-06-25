@@ -1,11 +1,11 @@
-﻿using Cordonez.BubbleInvasion.DataModels;
-using Cordonez.Modules.CustomScriptableObjects.Core.Events;
-using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace Cordonez.BubbleInvasion.UI
+﻿namespace Cordonez.BubbleInvasion.UI
 {
+	using DataModels;
+	using Modules.CustomScriptableObjects.Core.Events;
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+	using UnityEngine.UI;
+
 	[RequireComponent(typeof(Text))]
 	public class ClipToText : MonoBehaviour
 	{

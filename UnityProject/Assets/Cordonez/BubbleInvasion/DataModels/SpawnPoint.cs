@@ -1,8 +1,8 @@
-﻿using Cordonez.Modules.CustomScriptableObjects.Core.Variables;
-using UnityEngine;
-
-namespace Cordonez.BubbleInvasion.DataModels
+﻿namespace Cordonez.BubbleInvasion.DataModels
 {
+	using Modules.CustomScriptableObjects.Core.Variables;
+	using UnityEngine;
+
 	[System.Serializable]
 	public class SpawnPoint
 	{
