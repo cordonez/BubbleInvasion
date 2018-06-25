@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: 
   FlagsOnEnable: 0
-  m_value: 0
+  m_value: 3
+  m_runtimeValue: 3
